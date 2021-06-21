@@ -1,0 +1,29 @@
+// Benchmark "x2" written by ABC on Thu Jun 17 13:53:33 2021
+
+module x2 ( 
+    x0, x1, x2, x3, x4, x5, x6, x7, x8, x9,
+    f0, f1, f2, f3, f4, f5, f6  );
+  input  x0, x1, x2, x3, x4, x5, x6, x7, x8, x9;
+  output f0, f1, f2, f3, f4, f5, f6;
+  wire old_n23_, old_n24_, old_n27_, old_n28_, old_n29_, old_n30_, old_n32_,
+    old_n33_, old_n34_, old_n35_;
+  assign f0 = (~x7 & (x8 | x9)) | (~x8 & (~x9 | (x7 & x9))) | (x8 & x9);
+  assign f1 = (~x7 & (x8 | x9)) | (x8 & x9) | (x7 & ~x9);
+  assign f2 = ~x9 & ~x7 & ~x8;
+  assign f3 = (x7 & (~x9 | (~x8 & x9))) | ~old_n23_ | (~x7 & (x9 | (~x8 & ~x9)));
+  assign old_n23_ = old_n24_ & ~x0 & ~x1;
+  assign old_n24_ = ~x2 & (~x8 | ~x9);
+  assign f4 = ~x6 | (~x7 & (x9 | (~x8 & ~x9))) | (x8 & (~x7 | x9));
+  assign f5 = ~old_n27_ | (~x0 & old_n30_ & ~x1);
+  assign old_n27_ = ~old_n29_ & x6 & (old_n28_ | x9);
+  assign old_n28_ = x8 & (~x3 | x4 | ~x7);
+  assign old_n29_ = x8 & x9 & x5 & ~x7;
+  assign old_n30_ = x2 & (x7 ? (x8 & x9) : ~x8);
+  assign f6 = (~old_n35_ & ~x7) | ~x6 | (~old_n32_ & x7);
+  assign old_n32_ = (~x9 | (~old_n33_ & x8)) & (~old_n34_ | ~x8 | x9);
+  assign old_n33_ = ~x0 & ~x1 & ~x2;
+  assign old_n34_ = x3 & x4;
+  assign old_n35_ = (x8 | x9) & (~x5 | ~x8 | ~x9);
+endmodule
+
+

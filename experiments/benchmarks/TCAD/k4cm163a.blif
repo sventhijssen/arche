@@ -1,0 +1,34 @@
+// Benchmark "cm163a" written by ABC on Thu Jun 17 11:49:29 2021
+
+module cm163a ( 
+    x0, x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13, x14, x15,
+    f0, f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12  );
+  input  x0, x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13, x14,
+    x15;
+  output f0, f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12;
+  wire old_n34_, old_n37_, old_n39_, old_n40_, old_n43_, old_n44_, old_n46_,
+    old_n48_;
+  assign f0 = x12 | x1 | x11;
+  assign f1 = x11 | ~x12;
+  assign f2 = ~old_n34_ | ~x12 | ~x9 | ~x11;
+  assign old_n34_ = x7 & x8 & x5 & x6;
+  assign f3 = old_n34_ | ~x9 | ~x11 | ~x12;
+  assign f6 = x1 & ~old_n37_ & x9;
+  assign old_n37_ = x2 & x3 & f1 & x4;
+  assign f8 = old_n39_ | ~x0 | x10 | ~x11;
+  assign old_n39_ = old_n40_ & x2 & x3;
+  assign old_n40_ = x4 & x9 & x12;
+  assign f9 = x0 & ~x10 & (~x11 ^ x12);
+  assign f10 = old_n43_ & x0;
+  assign old_n43_ = x9 & ~x10 & old_n44_ & x11;
+  assign old_n44_ = x12 & (~x2 | ~x3 | ~x4);
+  assign f11 = x0 & ~x10 & ~old_n46_ & x11;
+  assign old_n46_ = x1 ? (~old_n44_ | ~x9) : x12;
+  assign f12 = old_n48_ & x12;
+  assign old_n48_ = x11 & ~x10 & x0 & ~x9;
+  assign f4 = ~x14;
+  assign f5 = ~x13;
+  assign f7 = ~x15;
+endmodule
+
+

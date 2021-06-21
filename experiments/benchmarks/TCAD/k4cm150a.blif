@@ -1,0 +1,27 @@
+// Benchmark "cm150a" written by ABC on Thu Jun 17 11:47:22 2021
+
+module cm150a ( 
+    x0, x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13, x14, x15,
+    x16, x17, x18, x19, x20,
+    f0  );
+  input  x0, x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13, x14,
+    x15, x16, x17, x18, x19, x20;
+  output f0;
+  wire old_n25_, old_n26_, old_n27_, old_n28_, old_n29_, old_n30_, old_n31_,
+    old_n32_, old_n33_, old_n34_, old_n35_, old_n36_;
+  assign f0 = (~old_n25_ & x16) | x20 | (~old_n31_ & ~x16);
+  assign old_n25_ = x17 ? (~old_n29_ & ~old_n30_) : old_n26_;
+  assign old_n26_ = x18 ? old_n27_ : old_n28_;
+  assign old_n27_ = x19 ? x13 : x5;
+  assign old_n28_ = x19 ? x9 : x1;
+  assign old_n29_ = x18 & (x19 ? ~x15 : ~x7);
+  assign old_n30_ = ~x18 & (x19 ? ~x11 : ~x3);
+  assign old_n31_ = x17 ? (~old_n35_ & ~old_n36_) : old_n32_;
+  assign old_n32_ = x18 ? old_n33_ : old_n34_;
+  assign old_n33_ = x19 ? x12 : x4;
+  assign old_n34_ = x19 ? x8 : x0;
+  assign old_n35_ = x18 & (x19 ? ~x14 : ~x6);
+  assign old_n36_ = ~x18 & (x19 ? ~x10 : ~x2);
+endmodule
+
+

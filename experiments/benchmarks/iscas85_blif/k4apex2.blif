@@ -1,0 +1,213 @@
+// Benchmark "apex2" written by ABC on Sat Jun 19 09:21:31 2021
+
+module apex2 ( 
+    x0, x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13, x14, x15,
+    x16, x17, x18, x19, x20, x21, x22, x23, x24, x25, x26, x27, x28, x29,
+    x30, x31, x32, x33, x34, x35, x36, x37, x38,
+    f0, f1, f2  );
+  input  x0, x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13, x14,
+    x15, x16, x17, x18, x19, x20, x21, x22, x23, x24, x25, x26, x27, x28,
+    x29, x30, x31, x32, x33, x34, x35, x36, x37, x38;
+  output f0, f1, f2;
+  wire old_n45_, old_n46_, old_n47_, old_n48_, old_n49_, old_n50_, old_n51_,
+    old_n52_, old_n53_, old_n54_, old_n55_, old_n56_, old_n57_, old_n58_,
+    old_n59_, old_n60_, old_n61_, old_n62_, old_n63_, old_n64_, old_n65_,
+    old_n66_, old_n67_, old_n68_, old_n69_, old_n70_, old_n71_, old_n72_,
+    old_n73_, old_n74_, old_n75_, old_n76_, old_n77_, old_n78_, old_n79_,
+    old_n80_, old_n81_, old_n82_, old_n83_, old_n84_, old_n85_, old_n86_,
+    old_n87_, old_n88_, old_n89_, old_n90_, old_n91_, old_n92_, old_n93_,
+    old_n94_, old_n95_, old_n96_, old_n97_, old_n98_, old_n99_, old_n100_,
+    old_n101_, old_n102_, old_n103_, old_n104_, old_n105_, old_n106_,
+    old_n107_, old_n108_, old_n109_, old_n110_, old_n111_, old_n112_,
+    old_n113_, old_n114_, old_n115_, old_n116_, old_n118_, old_n119_,
+    old_n120_, old_n121_, old_n122_, old_n123_, old_n124_, old_n125_,
+    old_n126_, old_n127_, old_n128_, old_n129_, old_n130_, old_n131_,
+    old_n132_, old_n133_, old_n134_, old_n135_, old_n136_, old_n137_,
+    old_n138_, old_n139_, old_n140_, old_n141_, old_n142_, old_n143_,
+    old_n144_, old_n145_, old_n146_, old_n147_, old_n148_, old_n149_,
+    old_n150_, old_n151_, old_n152_, old_n153_, old_n154_, old_n155_,
+    old_n156_, old_n157_, old_n158_, old_n159_, old_n160_, old_n161_,
+    old_n162_, old_n164_, old_n165_, old_n166_, old_n167_, old_n168_,
+    old_n169_, old_n170_, old_n171_, old_n172_, old_n173_, old_n174_,
+    old_n175_, old_n176_, old_n177_, old_n178_, old_n179_, old_n180_,
+    old_n181_, old_n182_, old_n183_, old_n184_, old_n185_, old_n186_,
+    old_n187_, old_n188_, old_n189_, old_n190_, old_n191_, old_n192_,
+    old_n193_, old_n194_, old_n195_, old_n196_, old_n197_, old_n198_,
+    old_n199_, old_n200_, old_n201_, old_n202_, old_n203_, old_n204_,
+    old_n205_, old_n206_, old_n207_, old_n208_, old_n209_, old_n210_,
+    old_n211_, old_n212_, old_n213_, old_n214_, old_n215_;
+  assign f0 = ~x28 & (old_n45_ | (old_n112_ & ~x30));
+  assign old_n45_ = ~x23 & (old_n107_ | (old_n46_ & ~x16));
+  assign old_n46_ = ~x27 & (old_n47_ | ~old_n85_);
+  assign old_n47_ = (~x13 | ~x14) & (~old_n48_ | old_n70_);
+  assign old_n48_ = ~old_n66_ & (~x36 | old_n49_ | old_n69_);
+  assign old_n49_ = (~old_n50_ | x24) & (~old_n63_ | x2);
+  assign old_n50_ = ~old_n61_ & (old_n51_ | (old_n58_ & ~x2));
+  assign old_n51_ = ~x26 & (old_n56_ | (~old_n52_ & ~x2));
+  assign old_n52_ = ~old_n55_ & (x4 | ~old_n53_ | x5);
+  assign old_n53_ = ~x6 & (old_n54_ | (~x12 & ~x29));
+  assign old_n54_ = ~x1 & ~x17 & (~x21 | ~x29);
+  assign old_n55_ = ~x17 & ~x21 & ~x30;
+  assign old_n56_ = ~x12 & ~x21 & (old_n57_ | ~x30);
+  assign old_n57_ = ~x4 & ~x5 & ~x6 & x29;
+  assign old_n58_ = ~x4 & ~x5 & old_n59_ & ~x6;
+  assign old_n59_ = ~x29 & ~old_n60_ & x34;
+  assign old_n60_ = x12 & (x1 | x17);
+  assign old_n61_ = ~old_n62_ & x7;
+  assign old_n62_ = ~x31 & ~x35;
+  assign old_n63_ = ~x4 & ~x5 & old_n64_ & ~x6;
+  assign old_n64_ = ~x7 & ~x29 & old_n65_ & ~x34;
+  assign old_n65_ = ~old_n60_ & x35;
+  assign old_n66_ = old_n67_ & old_n68_ & ~x21 & ~x24;
+  assign old_n67_ = x2 & ~x12 & ~x20;
+  assign old_n68_ = ~x26 & x29;
+  assign old_n69_ = x8 & x32;
+  assign old_n70_ = ~old_n83_ & (old_n71_ | (~old_n79_ & ~old_n84_));
+  assign old_n71_ = ~x24 & (old_n77_ | (~old_n72_ & ~x26));
+  assign old_n72_ = (~old_n73_ | x29) & ~old_n76_ & (old_n75_ | ~x29);
+  assign old_n73_ = ~x30 & ~old_n74_ & x36;
+  assign old_n74_ = (~old_n62_ | x8) & (x7 | (x8 & x32));
+  assign old_n75_ = ~x22 & (x21 | (~x0 & (~x20 | x22)));
+  assign old_n76_ = x7 & ~x9 & x31;
+  assign old_n77_ = old_n78_ & ~x8 & ~x29 & ~x30;
+  assign old_n78_ = ~x31 & x34 & ~x35 & x36;
+  assign old_n79_ = (~old_n81_ | ~x7) & ~old_n82_ & (~old_n80_ | x7);
+  assign old_n80_ = ~x29 & ~x30 & ~old_n69_ & x36;
+  assign old_n81_ = ~x9 & x31 & (x21 | ~x29);
+  assign old_n82_ = x29 & (x22 | (x20 & ~x21));
+  assign old_n83_ = x12 & x17;
+  assign old_n84_ = x34 ? x24 : ~x35;
+  assign old_n85_ = (old_n99_ | x12) & (x17 | (~old_n86_ & old_n99_));
+  assign old_n86_ = ~x9 & ~old_n96_ & (old_n87_ | old_n98_);
+  assign old_n87_ = ~x4 & ~x5 & old_n88_ & ~x6;
+  assign old_n88_ = x36 & ~old_n69_ & (old_n89_ | old_n94_);
+  assign old_n89_ = ~x24 & (old_n93_ | (~old_n90_ & ~old_n92_));
+  assign old_n90_ = ~old_n91_ & (~old_n68_ | x21);
+  assign old_n91_ = ~x2 & ~x29 & x34;
+  assign old_n92_ = x7 & x35;
+  assign old_n93_ = ~x29 & ~x35 & ~x2 & ~x26;
+  assign old_n94_ = old_n95_ & ~x2 & ~x7;
+  assign old_n95_ = ~x29 & ~x34 & x35;
+  assign old_n96_ = x13 ? x14 : (old_n97_ & x10);
+  assign old_n97_ = (~x3 | x18) & (x11 | x19);
+  assign old_n98_ = old_n68_ & ~x24 & x2 & ~x21;
+  assign old_n99_ = ~old_n100_ & (x24 | old_n101_ | x26);
+  assign old_n100_ = ~old_n84_ & ~old_n101_ & (x21 | ~x29);
+  assign old_n101_ = ~old_n102_ & (x13 | (~old_n105_ & ~old_n106_));
+  assign old_n102_ = ~x14 & (old_n103_ | old_n104_);
+  assign old_n103_ = x13 & x31 & x7 & x10;
+  assign old_n104_ = x25 & x33;
+  assign old_n105_ = x7 & x10 & ~old_n97_ & x31;
+  assign old_n106_ = x14 & x33;
+  assign old_n107_ = ~x24 & ~x30 & old_n108_ & ~x31;
+  assign old_n108_ = ~x32 & x34 & (old_n109_ | ~old_n111_);
+  assign old_n109_ = old_n110_ & x33;
+  assign old_n110_ = (x14 | x25) & (x21 | ~x29);
+  assign old_n111_ = ~old_n82_ & (x29 | old_n92_ | ~x36);
+  assign old_n112_ = ~x31 & ~x32 & ~old_n113_ & ~x34;
+  assign old_n113_ = ~old_n114_ & (old_n116_ | (~old_n109_ & ~old_n82_));
+  assign old_n114_ = ~x29 & ~old_n115_ & x36;
+  assign old_n115_ = (x7 | ~x35) & (x24 | x26 | x35);
+  assign old_n116_ = ~x35 & (x24 | x26);
+  assign f1 = ~x28 & (old_n118_ | (old_n159_ & ~x30));
+  assign old_n118_ = ~x23 & (old_n154_ | (old_n119_ & ~x16));
+  assign old_n119_ = ~x27 & (old_n143_ | (~old_n120_ & x37));
+  assign old_n120_ = ~old_n137_ & (old_n69_ | (~old_n121_ & ~old_n134_));
+  assign old_n121_ = ~x24 & (old_n122_ | (old_n132_ & ~x2));
+  assign old_n122_ = ~old_n92_ & (old_n130_ | (old_n123_ & ~x4));
+  assign old_n123_ = ~x5 & ~x6 & ~old_n124_ & ~old_n129_;
+  assign old_n124_ = ~old_n128_ & (old_n125_ | old_n127_);
+  assign old_n125_ = x12 & (x17 | (~old_n126_ & x1));
+  assign old_n126_ = ~x9 & (~old_n97_ | ~x10);
+  assign old_n127_ = x14 & (x13 | x33);
+  assign old_n128_ = ~x9 & x13 & ~x14 & ~x17;
+  assign old_n129_ = ~old_n91_ & (~old_n68_ | x0 | x20);
+  assign old_n130_ = ~x0 & ~x20 & old_n131_ & ~x26;
+  assign old_n131_ = ~x30 & ~old_n83_ & ~old_n127_;
+  assign old_n132_ = ~x4 & ~x5 & old_n133_ & ~x6;
+  assign old_n133_ = ~x26 & ~x29 & ~old_n124_ & ~x35;
+  assign old_n134_ = ~x2 & old_n135_ & ~x4;
+  assign old_n135_ = ~x5 & ~x6 & old_n136_ & ~x7;
+  assign old_n136_ = ~x29 & ~x34 & ~old_n124_ & x35;
+  assign old_n137_ = ~x29 & ~x30 & (old_n138_ | old_n141_);
+  assign old_n138_ = ~x24 & ~old_n127_ & ~old_n139_ & ~old_n83_;
+  assign old_n139_ = ~old_n140_ & (x26 | ~x31 | x32);
+  assign old_n140_ = ~x8 & ~x35 & (~x26 | x34);
+  assign old_n141_ = ~old_n84_ & ~old_n127_ & ~old_n83_ & ~old_n142_;
+  assign old_n142_ = (x7 | x8) & (~x31 | x32);
+  assign old_n143_ = (~x13 | ~x14) & (old_n144_ | old_n153_);
+  assign old_n144_ = ~x24 & (old_n145_ | (old_n150_ & x34));
+  assign old_n145_ = ~x26 & (old_n146_ | (~old_n149_ & ~old_n83_));
+  assign old_n146_ = x29 & (old_n147_ | (old_n148_ & x2));
+  assign old_n147_ = ~old_n83_ & (x22 | (x21 & ~x22));
+  assign old_n148_ = ~x20 & (~x17 | (~x12 & ~x21));
+  assign old_n149_ = ~old_n104_ & (~x7 | ~x31);
+  assign old_n150_ = ~old_n151_ & ~old_n83_;
+  assign old_n151_ = ~old_n152_ & (old_n149_ | (~x20 & x29));
+  assign old_n152_ = x29 & (x21 | x22);
+  assign old_n153_ = ~x34 & old_n150_ & x35;
+  assign old_n154_ = ~x24 & ~x30 & old_n155_ & ~x31;
+  assign old_n155_ = ~x32 & x34 & (old_n156_ | ~old_n158_);
+  assign old_n156_ = ~x29 & (old_n104_ | (old_n157_ & x37));
+  assign old_n157_ = ~old_n92_ & ~old_n106_;
+  assign old_n158_ = ~old_n152_ & (~old_n104_ | ~x20);
+  assign old_n159_ = ~x31 & ~x32 & ~old_n160_ & ~x34;
+  assign old_n160_ = (old_n158_ | old_n116_) & (old_n161_ | x29);
+  assign old_n161_ = ~old_n162_ & (~x25 | old_n116_ | ~x33);
+  assign old_n162_ = x37 & ~old_n106_ & ~old_n115_;
+  assign f2 = ~x28 & (old_n164_ | (old_n208_ & ~x34));
+  assign old_n164_ = ~x24 & (old_n165_ | (~old_n192_ & x34));
+  assign old_n165_ = ~x26 & (old_n178_ | ~old_n166_ | old_n190_);
+  assign old_n166_ = ~old_n106_ & (x29 | ~old_n167_ | ~x38);
+  assign old_n167_ = ~old_n104_ & ~old_n69_ & (old_n168_ | old_n173_);
+  assign old_n168_ = ~old_n169_ & ~old_n61_;
+  assign old_n169_ = ~old_n170_ & x30;
+  assign old_n170_ = ~x2 & ~x4 & old_n171_ & ~x5;
+  assign old_n171_ = ~x6 & (old_n172_ | ~x1 | ~x12);
+  assign old_n172_ = ~x9 & (~old_n97_ | ~x10 | x13);
+  assign old_n173_ = x9 & ~x35 & ~old_n174_ & ~old_n177_;
+  assign old_n174_ = x30 & (~old_n175_ | x2);
+  assign old_n175_ = old_n176_ & ~x4;
+  assign old_n176_ = ~x5 & ~x6 & (~x1 | ~x12);
+  assign old_n177_ = x10 & (~old_n97_ | x13);
+  assign old_n178_ = ~x22 & (old_n179_ | (~old_n185_ & x29));
+  assign old_n179_ = x38 & ~old_n104_ & ~old_n180_ & ~old_n69_;
+  assign old_n180_ = ~old_n181_ & (old_n61_ | (~old_n170_ & ~old_n183_));
+  assign old_n181_ = x9 & ~x35 & ~old_n182_ & ~old_n177_;
+  assign old_n182_ = (~x12 | x30) & (x2 | (~old_n175_ & x30));
+  assign old_n183_ = ~x30 & (~x2 | (~old_n184_ & x12));
+  assign old_n184_ = ~x9 & (~x10 | ~old_n97_ | x13);
+  assign old_n185_ = old_n188_ & (x16 | ~old_n186_ | x23);
+  assign old_n186_ = ~x27 & old_n187_ & (x21 | (x20 & ~x21));
+  assign old_n187_ = ~old_n83_ & (~x13 | ~x14);
+  assign old_n188_ = old_n189_ & ~old_n83_ & ~x23 & ~x27;
+  assign old_n189_ = ~x16 & (~x13 | ~x14);
+  assign old_n190_ = ~old_n188_ & ~old_n191_;
+  assign old_n191_ = ~x30 & ~x31 & ~x32;
+  assign old_n192_ = old_n205_ & (x29 | (old_n193_ & ~old_n199_));
+  assign old_n193_ = ~old_n196_ & old_n197_ & (~old_n194_ | ~x38);
+  assign old_n194_ = ~old_n104_ & ~old_n69_ & (old_n168_ | old_n195_);
+  assign old_n195_ = x9 & ~x10 & ~old_n174_ & ~x35;
+  assign old_n196_ = ~old_n191_ & (~old_n189_ | old_n83_ | x27);
+  assign old_n197_ = ~x23 & (~old_n198_ | ~x14 | x23 | x30);
+  assign old_n198_ = ~x31 & ~x32 & x33;
+  assign old_n199_ = ~x13 & (old_n203_ | (old_n200_ & x9));
+  assign old_n200_ = ~x35 & x38 & old_n201_ & ~old_n104_;
+  assign old_n201_ = old_n202_ & (x11 | x19);
+  assign old_n202_ = ~old_n69_ & ~old_n174_ & (~x3 | x18);
+  assign old_n203_ = x14 & ~x16 & old_n204_ & ~x23;
+  assign old_n204_ = ~x27 & ~old_n83_ & x33;
+  assign old_n205_ = ~old_n207_ & (old_n206_ | ~x22);
+  assign old_n206_ = ~old_n196_ & ~old_n106_ & ~x23;
+  assign old_n207_ = ~x22 & x29 & (x20 | x21);
+  assign old_n208_ = x35 & (old_n209_ | old_n215_ | old_n207_);
+  assign old_n209_ = ~x29 & (~old_n210_ | (~old_n213_ & x14));
+  assign old_n210_ = (~old_n211_ | x7) & (old_n212_ | old_n191_);
+  assign old_n211_ = x38 & ~old_n104_ & ~old_n169_ & ~old_n69_;
+  assign old_n212_ = ~x23 & ~x27 & ~old_n83_ & ~x16;
+  assign old_n213_ = (old_n191_ | ~x13) & (~x33 | (~old_n191_ & (~old_n214_ | x13)));
+  assign old_n214_ = ~x16 & ~x23 & ~old_n83_ & ~x27;
+  assign old_n215_ = x22 & (old_n190_ | old_n106_);
+endmodule
+
+

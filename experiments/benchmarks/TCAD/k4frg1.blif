@@ -1,0 +1,67 @@
+// Benchmark "frg1" written by ABC on Thu Jun 17 12:35:40 2021
+
+module frg1 ( 
+    x0, x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13, x14, x15,
+    x16, x17, x18, x19, x20, x21, x22, x23, x24, x25, x26, x27,
+    f0, f1, f2  );
+  input  x0, x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13, x14,
+    x15, x16, x17, x18, x19, x20, x21, x22, x23, x24, x25, x26, x27;
+  output f0, f1, f2;
+  wire old_n34_, old_n35_, old_n36_, old_n37_, old_n38_, old_n39_, old_n40_,
+    old_n41_, old_n42_, old_n43_, old_n44_, old_n45_, old_n46_, old_n47_,
+    old_n48_, old_n49_, old_n50_, old_n51_, old_n52_, old_n53_, old_n54_,
+    old_n55_, old_n56_, old_n57_, old_n58_, old_n59_, old_n60_, old_n61_,
+    old_n62_, old_n63_, old_n64_, old_n65_, old_n66_, old_n67_, old_n68_,
+    old_n69_, old_n70_, old_n71_, old_n72_, old_n73_, old_n74_, old_n75_,
+    old_n76_, old_n77_, old_n79_;
+  assign f0 = x2 ? ~x1 : (old_n34_ | old_n77_);
+  assign old_n34_ = ~old_n76_ & (old_n66_ | old_n35_ | ~old_n46_);
+  assign old_n35_ = ~x20 & (old_n44_ | (~old_n36_ & ~x16));
+  assign old_n36_ = ~old_n41_ & (x14 | ~old_n37_ | x17);
+  assign old_n37_ = ~x18 & (old_n40_ | (old_n38_ & ~x13));
+  assign old_n38_ = ~x15 & ~x19 & (old_n39_ | ~x11);
+  assign old_n39_ = ~x21 & ~x22 & ~x23 & ~x24;
+  assign old_n40_ = ~x6 & (~x11 | (~x22 & ~x24));
+  assign old_n41_ = ~x8 & (old_n42_ | (old_n43_ & ~x15));
+  assign old_n42_ = ~x6 & (~x11 | ~x24);
+  assign old_n43_ = ~x19 & (~x11 | (~x23 & ~x24));
+  assign old_n44_ = ~x10 & ~old_n45_ & (~x6 | ~x19);
+  assign old_n45_ = x8 & (x17 | x18);
+  assign old_n46_ = ~old_n64_ & old_n56_ & (old_n47_ | x9);
+  assign old_n47_ = ~old_n54_ & (x14 | (~old_n48_ & ~old_n51_));
+  assign old_n48_ = ~x13 & (old_n49_ | (~old_n50_ & ~x7));
+  assign old_n49_ = ~x15 & ~x16 & (old_n39_ | ~x11);
+  assign old_n50_ = x11 & (x21 | x22);
+  assign old_n51_ = ~x6 & (old_n53_ | (~old_n52_ & ~x7));
+  assign old_n52_ = x11 & x22;
+  assign old_n53_ = ~x16 & (~x11 | (~x22 & ~x24));
+  assign old_n54_ = ~x8 & ~x16 & (old_n42_ | old_n55_);
+  assign old_n55_ = ~x15 & (~x11 | (~x23 & ~x24));
+  assign old_n56_ = ~old_n59_ & (x7 | (~old_n57_ & old_n62_));
+  assign old_n57_ = ~x14 & ~x17 & ~old_n58_ & ~x18;
+  assign old_n58_ = (old_n52_ | x6) & (old_n50_ | x13);
+  assign old_n59_ = ~x12 & (~x11 | (~old_n60_ & ~x24));
+  assign old_n60_ = ~old_n61_ & (x6 | (x8 & x22));
+  assign old_n61_ = ~x23 & (~x8 | (~x21 & ~x22));
+  assign old_n62_ = ~old_n63_ & x8;
+  assign old_n63_ = ~x12 & ~x22 & (~x6 | ~x21);
+  assign old_n64_ = ~x10 & (~old_n65_ | ~x9);
+  assign old_n65_ = x12 & (x7 | x17 | x18);
+  assign old_n66_ = ~x5 & (old_n75_ | old_n67_ | ~old_n71_);
+  assign old_n67_ = ~x13 & (old_n70_ | (old_n68_ & ~x15));
+  assign old_n68_ = ~old_n69_ & (~x9 | ~x19);
+  assign old_n69_ = x11 & (x21 | x23);
+  assign old_n70_ = ~x7 & (~x11 | ~x21);
+  assign old_n71_ = (old_n72_ | x8) & ~old_n74_ & x6;
+  assign old_n72_ = (~old_n73_ | x15) & (x12 | x23);
+  assign old_n73_ = (~x11 | ~x23) & (~x9 | ~x19);
+  assign old_n74_ = ~x12 & ~x21 & (~x7 | ~x23);
+  assign old_n75_ = ~x10 & (~x7 | ~x19);
+  assign old_n76_ = ~x0 & ~x3;
+  assign old_n77_ = ~x0 & ~x3 & ~x27;
+  assign f1 = old_n79_ | x0 | x2;
+  assign old_n79_ = x4 & (x3 | ~x25);
+  assign f2 = ~x3 & (x0 | x2 | ~x26);
+endmodule
+
+

@@ -1,0 +1,26 @@
+// Benchmark "parity" written by ABC on Thu Jun 17 13:25:30 2021
+
+module parity ( 
+    x0, x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13, x14, x15,
+    f0  );
+  input  x0, x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13, x14,
+    x15;
+  output f0;
+  wire old_n20_, old_n21_, old_n22_, old_n23_, old_n24_, old_n25_, old_n26_,
+    old_n27_, old_n28_, old_n29_, old_n30_, old_n31_;
+  assign f0 = (~old_n20_ & (x14 ^ x15)) | (~old_n31_ & (~x14 ^ x15));
+  assign old_n20_ = (old_n21_ | (x12 ^ x13)) & (old_n30_ | (~x12 ^ x13));
+  assign old_n21_ = (old_n22_ | (x10 ^ x11)) & (old_n29_ | (~x10 ^ x11));
+  assign old_n22_ = (old_n23_ | (x8 ^ x9)) & (old_n28_ | (~x8 ^ x9));
+  assign old_n23_ = (old_n24_ | (x6 ^ x7)) & (old_n27_ | (~x6 ^ x7));
+  assign old_n24_ = (old_n25_ | (x4 ^ x5)) & (old_n26_ | (~x4 ^ x5));
+  assign old_n25_ = ((x2 ^ x3) | (x0 ^ x1)) & ((~x2 ^ x3) | (~x0 ^ x1));
+  assign old_n26_ = ((~x2 ^ x3) | (x0 ^ x1)) & ((x2 ^ x3) | (~x0 ^ x1));
+  assign old_n27_ = (old_n25_ | (~x4 ^ x5)) & (old_n26_ | (x4 ^ x5));
+  assign old_n28_ = (old_n24_ | (~x6 ^ x7)) & (old_n27_ | (x6 ^ x7));
+  assign old_n29_ = (old_n23_ | (~x8 ^ x9)) & (old_n28_ | (x8 ^ x9));
+  assign old_n30_ = (old_n22_ | (~x10 ^ x11)) & (old_n29_ | (x10 ^ x11));
+  assign old_n31_ = (old_n21_ | (~x12 ^ x13)) & (old_n30_ | (x12 ^ x13));
+endmodule
+
+

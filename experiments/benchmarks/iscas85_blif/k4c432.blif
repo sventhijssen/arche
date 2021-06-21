@@ -1,0 +1,113 @@
+// Benchmark "c432.blif" written by ABC on Wed Jun 16 23:54:50 2021
+
+module \c432.blif  ( 
+    G1gat, G4gat, G8gat, G11gat, G14gat, G17gat, G21gat, G24gat, G27gat,
+    G30gat, G34gat, G37gat, G40gat, G43gat, G47gat, G50gat, G53gat, G56gat,
+    G60gat, G63gat, G66gat, G69gat, G73gat, G76gat, G79gat, G82gat, G86gat,
+    G89gat, G92gat, G95gat, G99gat, G102gat, G105gat, G108gat, G112gat,
+    G115gat,
+    G223gat, G329gat, G370gat, G421gat, G430gat, G431gat, G432gat  );
+  input  G1gat, G4gat, G8gat, G11gat, G14gat, G17gat, G21gat, G24gat,
+    G27gat, G30gat, G34gat, G37gat, G40gat, G43gat, G47gat, G50gat, G53gat,
+    G56gat, G60gat, G63gat, G66gat, G69gat, G73gat, G76gat, G79gat, G82gat,
+    G86gat, G89gat, G92gat, G95gat, G99gat, G102gat, G105gat, G108gat,
+    G112gat, G115gat;
+  output G223gat, G329gat, G370gat, G421gat, G430gat, G431gat, G432gat;
+  wire old_n46_, old_n47_, old_n48_, old_n49_, old_n50_, old_n51_, old_n52_,
+    old_n53_, old_n54_, old_n55_, old_n57_, old_n58_, old_n59_, old_n60_,
+    old_n61_, old_n62_, old_n63_, old_n64_, old_n65_, old_n66_, old_n67_,
+    old_n68_, old_n69_, old_n70_, old_n71_, old_n72_, old_n73_, old_n75_,
+    old_n76_, old_n77_, old_n78_, old_n79_, old_n80_, old_n81_, old_n82_,
+    old_n83_, old_n84_, old_n85_, old_n86_, old_n87_, old_n88_, old_n89_,
+    old_n90_, old_n91_, old_n92_, old_n93_, old_n94_, old_n95_, old_n96_,
+    old_n97_, old_n98_, old_n100_, old_n101_, old_n102_, old_n103_,
+    old_n104_, old_n105_, old_n106_, old_n107_, old_n108_, old_n109_,
+    old_n110_, old_n111_, old_n112_, old_n113_, old_n114_, old_n115_,
+    old_n116_, old_n117_, old_n118_, old_n119_, old_n122_, old_n123_,
+    old_n124_, old_n126_, old_n127_;
+  assign G223gat = ~old_n46_ | old_n55_;
+  assign old_n46_ = ~old_n52_ & ~old_n53_ & old_n47_ & ~old_n54_;
+  assign old_n47_ = ~old_n48_ & ~old_n49_ & ~old_n50_ & old_n51_;
+  assign old_n48_ = ~G50gat & G56gat;
+  assign old_n49_ = ~G37gat & G43gat;
+  assign old_n50_ = ~G24gat & G30gat;
+  assign old_n51_ = (G11gat | ~G17gat) & (G1gat | ~G4gat);
+  assign old_n52_ = ~G89gat & G95gat;
+  assign old_n53_ = ~G76gat & G82gat;
+  assign old_n54_ = ~G63gat & G69gat;
+  assign old_n55_ = ~G102gat & G108gat;
+  assign G329gat = ~old_n57_ | old_n72_ | old_n73_;
+  assign old_n57_ = ~old_n58_ & ~old_n59_ & ~old_n60_ & old_n61_;
+  assign old_n58_ = G82gat & ~G86gat & (G223gat ^ (G76gat | ~G82gat));
+  assign old_n59_ = G69gat & ~G73gat & (G223gat ^ (G63gat | ~G69gat));
+  assign old_n60_ = G56gat & ~G60gat & (G223gat ^ (G50gat | ~G56gat));
+  assign old_n61_ = ~old_n62_ & ~old_n64_ & ~old_n66_ & ~old_n69_;
+  assign old_n62_ = old_n63_ & ((~old_n46_ | old_n55_) ^ ~old_n49_);
+  assign old_n63_ = G43gat & ~G47gat;
+  assign old_n64_ = old_n65_ & ((~old_n46_ | old_n55_) ^ ~old_n50_);
+  assign old_n65_ = G30gat & ~G34gat;
+  assign old_n66_ = old_n68_ & ((~old_n46_ | old_n55_) ^ ~old_n67_);
+  assign old_n67_ = ~G1gat & G4gat;
+  assign old_n68_ = G4gat & ~G8gat;
+  assign old_n69_ = old_n71_ & ((~old_n46_ | old_n55_) ^ ~old_n70_);
+  assign old_n70_ = ~G11gat & G17gat;
+  assign old_n71_ = G17gat & ~G21gat;
+  assign old_n72_ = G95gat & ~G99gat & (G223gat ^ (G89gat | ~G95gat));
+  assign old_n73_ = G108gat & ~G112gat & ((~G102gat & G108gat) ^ (old_n46_ & (G102gat | ~G108gat)));
+  assign G370gat = old_n95_ | ~old_n75_ | old_n97_;
+  assign old_n75_ = ~old_n89_ & ~old_n91_ & old_n76_ & ~old_n93_;
+  assign old_n76_ = ~old_n77_ & ~old_n80_ & ~old_n83_ & ~old_n86_;
+  assign old_n77_ = (G329gat ^ (old_n78_ | ~old_n63_)) & ~old_n78_ & old_n79_;
+  assign old_n78_ = ~G223gat ^ ~old_n49_;
+  assign old_n79_ = G43gat & ~G53gat;
+  assign old_n80_ = (G329gat ^ (old_n81_ | ~old_n65_)) & ~old_n81_ & old_n82_;
+  assign old_n81_ = ~G223gat ^ ~old_n50_;
+  assign old_n82_ = G30gat & ~G40gat;
+  assign old_n83_ = (G329gat ^ (old_n84_ | ~old_n68_)) & ~old_n84_ & old_n85_;
+  assign old_n84_ = ~G223gat ^ ~old_n67_;
+  assign old_n85_ = G4gat & ~G14gat;
+  assign old_n86_ = (G329gat ^ (old_n87_ | ~old_n71_)) & ~old_n87_ & old_n88_;
+  assign old_n87_ = ~G223gat ^ ~old_n70_;
+  assign old_n88_ = G17gat & ~G27gat;
+  assign old_n89_ = old_n90_ & (G329gat ^ ~old_n58_);
+  assign old_n90_ = G82gat & ~G92gat & (G223gat ^ (G76gat | ~G82gat));
+  assign old_n91_ = old_n92_ & (G329gat ^ ~old_n59_);
+  assign old_n92_ = G69gat & ~G79gat & (G223gat ^ (G63gat | ~G69gat));
+  assign old_n93_ = old_n94_ & (G329gat ^ ~old_n60_);
+  assign old_n94_ = G56gat & ~G66gat & (G223gat ^ (G50gat | ~G56gat));
+  assign old_n95_ = old_n96_ & (G329gat ^ ~old_n73_);
+  assign old_n96_ = G108gat & ~G115gat & ((~G102gat & G108gat) ^ (old_n46_ & (G102gat | ~G108gat)));
+  assign old_n97_ = old_n98_ & (G329gat ^ ~old_n72_);
+  assign old_n98_ = G95gat & ~G105gat & (G223gat ^ (G89gat | ~G95gat));
+  assign G421gat = ~old_n116_ & (~old_n100_ | old_n118_);
+  assign old_n100_ = ~old_n110_ & ~old_n112_ & old_n101_ & ~old_n114_;
+  assign old_n101_ = ~old_n102_ & ~old_n104_ & ~old_n106_ & ~old_n108_;
+  assign old_n102_ = old_n103_ & G56gat & (~G370gat | ~G66gat);
+  assign old_n103_ = (~G329gat | ~G60gat) & (~G223gat | ~G50gat);
+  assign old_n104_ = old_n105_ & G43gat & (~G370gat | ~G53gat);
+  assign old_n105_ = (~G329gat | ~G47gat) & (~G223gat | ~G37gat);
+  assign old_n106_ = old_n107_ & G17gat & (~G370gat | ~G27gat);
+  assign old_n107_ = (~G329gat | ~G21gat) & (~G223gat | ~G11gat);
+  assign old_n108_ = old_n109_ & G30gat & (~G370gat | ~G40gat);
+  assign old_n109_ = (~G329gat | ~G34gat) & (~G223gat | ~G24gat);
+  assign old_n110_ = old_n111_ & G95gat & (~G370gat | ~G105gat);
+  assign old_n111_ = (~G329gat | ~G99gat) & (~G223gat | ~G89gat);
+  assign old_n112_ = old_n113_ & G82gat & (~G370gat | ~G92gat);
+  assign old_n113_ = (~G329gat | ~G86gat) & (~G223gat | ~G76gat);
+  assign old_n114_ = old_n115_ & G69gat & (~G370gat | ~G79gat);
+  assign old_n115_ = (~G329gat | ~G73gat) & (~G223gat | ~G63gat);
+  assign old_n116_ = old_n117_ & G4gat & (~G223gat | ~G1gat);
+  assign old_n117_ = (~G370gat | ~G14gat) & (~G329gat | ~G8gat);
+  assign old_n118_ = old_n119_ & G108gat & (~G370gat | ~G115gat);
+  assign old_n119_ = (~G329gat | ~G112gat) & (~G223gat | ~G102gat);
+  assign G430gat = old_n106_ | old_n108_ | old_n102_ | (old_n104_ & ~old_n108_);
+  assign G431gat = old_n106_ | old_n108_ | old_n122_ | old_n124_;
+  assign old_n122_ = old_n123_ & old_n114_ & ~old_n102_;
+  assign old_n123_ = ~old_n104_ & ~old_n108_;
+  assign old_n124_ = old_n112_ & ~old_n102_ & ~old_n104_;
+  assign G432gat = ~old_n127_ | old_n122_ | old_n126_;
+  assign old_n126_ = old_n123_ & old_n110_ & ~old_n112_;
+  assign old_n127_ = ~old_n106_ & (~old_n104_ | old_n108_);
+endmodule
+
+

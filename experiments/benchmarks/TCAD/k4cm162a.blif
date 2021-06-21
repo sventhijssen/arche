@@ -1,0 +1,26 @@
+// Benchmark "top" written by ABC on Thu Jun 17 11:48:31 2021
+
+module top ( 
+    pa, pb, pc, pd, pe, pf, pg, ph, pi, pj, pk, pl, pm, pn,
+    pp, pq, pr, ps, po  );
+  input  pa, pb, pc, pd, pe, pf, pg, ph, pi, pj, pk, pl, pm, pn;
+  output pp, pq, pr, ps, po;
+  wire old_n22_, old_n23_, old_n24_, old_n25_, old_n26_, old_n28_, old_n30_,
+    old_n31_, old_n34_;
+  assign pp = (~old_n22_ & ~pb) | (old_n25_ & ~pb) | (~old_n22_ & ~old_n26_) | (old_n25_ & ~old_n26_);
+  assign old_n22_ = (~old_n23_ | ~old_n24_) & pd & pf;
+  assign old_n23_ = pc & pd & pe;
+  assign old_n24_ = pj & pn;
+  assign old_n25_ = ~pk ^ (~old_n23_ | pi);
+  assign old_n26_ = (~old_n23_ | ~old_n24_) & ~pd & pf;
+  assign pq = (~old_n22_ & ~pg) | (old_n28_ & ~pg) | (~old_n22_ & ~old_n26_) | (~old_n26_ & old_n28_);
+  assign old_n28_ = ~pl ^ (~old_n23_ | pi | pk);
+  assign pr = (~old_n22_ & ~ph) | (old_n30_ & ~ph) | (~old_n22_ & ~old_n26_) | (~old_n26_ & old_n30_);
+  assign old_n30_ = ~pm ^ (pl | ~old_n31_ | pi);
+  assign old_n31_ = ~pk & pc & pd & pe;
+  assign ps = old_n24_ & pe;
+  assign po = (~old_n22_ & ~pa) | (old_n34_ & ~pa) | (~old_n22_ & ~old_n26_) | (~old_n26_ & old_n34_);
+  assign old_n34_ = old_n23_ ^ pi;
+endmodule
+
+

@@ -181,7 +181,7 @@ class MappingSolExplorer:
                 else:
                     loc = self.__posOutAlloc[vertex]
                     s = state[(loc[0], loc[1])]
-                print(loc, s, outName)
+                    print(loc, s, outName)
                 f.write("assign {} = {} ;\n".format(outName, s))
                 # print('{} -> {}: {}'.format(outName,vout,s))
 
